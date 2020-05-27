@@ -219,7 +219,7 @@ function check(items) {
         let questionTag = questionEle.getElementsByTagName('p')[0]
         let questionValue = questionTag.innerText;
         let inputFieldEle = inputEle.getElementsByTagName('input')[0];
-        let inputAnswer = inputFieldEle.value;
+        let inputAnswer = inputFieldEle.value.toLowerCase();
 
         let correctAnswer = dataSourceMap[questionValue]
         if (inputAnswer === correctAnswer) {

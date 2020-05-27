@@ -1,0 +1,61 @@
+.root {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.item_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.btn_finish_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.text_field_answer_normal { 
+    height: 20px;
+    text-indent: 5px;
+}
+
+.text_field_answer_correct {
+    height: 20px;
+    text-indent: 5px;
+    border: 3px solid green;
+}
+
+.text_field_answer_wrong {
+    height: 20px;
+    text-indent: 5px;
+    border: 3px solid red;
+}
+
+#btn_finish {
+    background-color: #464646;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid;
+}
+
+#btn_finish:active {
+    background-color: white;
+    color: black;
+}
+
+.answer_div { 
+    display: none;
+}
+
+.divider_solid { 
+    margin-top: 1rem;
+    border-top: 1px solid #bbb;
+}

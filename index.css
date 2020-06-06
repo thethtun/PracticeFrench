@@ -100,11 +100,11 @@ body {
 .practice_item_type { 
     background-color: #4CAF50;
     margin: 0;
-    padding: 10px;
     text-align: center;
     color: white;
     user-select: none;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .practice_item_type:hover {
@@ -120,6 +120,7 @@ body {
 
 .practice_item_type p {
     margin: 0;
+    padding: 10px;
 }
 
 
@@ -149,7 +150,7 @@ body {
 }
 
 #btn_finish {
-    background-color: #464646;
+    background-color: #4CAF50;
     color: white;
     width: 100%;
     font-size: 14px;

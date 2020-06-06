@@ -1,5 +1,7 @@
 import prepositions from './data/prepositions.js';
+import verbs from './data/verb_rules.js';
 import practiceListTitles from './data/q_type.js';
+import q_makingQuestions from './data/making_questions.js';
 
 var dataSource = prepositions;
 var availablePracticeList = practiceListTitles;
@@ -13,39 +15,14 @@ const listPracticeType = document.getElementsByClassName('practice_type_list')[0
 const listQuestionItems = document.getElementsByClassName("item_container")[0];
 const buttonFinish = document.getElementById("btn_finish");
 const navItemMenu = document.getElementById("navItemMenu");
-const buttonPracticePreposition = document.getElementById("pratice_prepositions");
-
 
 
 function main() {
 
     showAvailablePracticeList()
 
-    //Generate Item List
-    let questionItemListHtml = generateQuestionItems()
-    listQuestionItems.innerHTML = questionItemListHtml
-
     navItemMenu.addEventListener('click', (e) => {
         showMenu()
-    })
-
-    buttonPracticePreposition.addEventListener('click', (e) => {
-        e.preventDefault()
-        //hides list items
-        listPracticeType.style.display = 'none';
-
-        //show questions
-        const practiceType = e.srcElement.dataset.name;
-        contentPractice.style.display = 'block';
-
-        switch (practiceType) {
-            case "prepositions":
-                dataSource = prepositions
-                break;
-            default:
-                dataSource = prepositions
-                break;
-        }
     })
 
     buttonFinish.addEventListener('click', (e) => {
@@ -61,22 +38,34 @@ function showAvailablePracticeList() {
     const list = document.querySelectorAll('.practice_item_type');
     list.forEach((element) => {
         element.addEventListener('click', (e) => {
+
             e.preventDefault()
             //hides list items
             listPracticeType.style.display = 'none';
 
             //show questions
             contentPractice.style.display = 'block';
-            
-            const practiceType = e.srcElement.dataset.name;    
+
+            const practiceType = e.srcElement.parentElement.dataset.name;
             switch (practiceType) {
                 case "prepositions":
                     dataSource = prepositions
+                    break;
+                case "verb_rules":
+                    dataSource = verbs;
+                    break;
+                case "making_questions":
+                    dataSource = q_makingQuestions;
                     break;
                 default:
                     dataSource = prepositions
                     break;
             }
+
+            //Generate Item List
+            let questionItemListHtml = generateQuestionItems()
+            listQuestionItems.innerHTML = questionItemListHtml
+
         })
     });
 }

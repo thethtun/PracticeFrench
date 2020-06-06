@@ -5,26 +5,54 @@
     <title>French Practice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link type="text/css" rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>  
+<body>
     <div class="root">
-        <div class="ex_example">
-            <h2>How-to</h2>
-            <p>Read the sentence and answer the highlighted prepositions in French. <br><br>For Examples,<br><b>Question:</b> Please deliver the purchased items to <b><u>my house</u></b>.<br><b>Answer:</b> chez moi</p>
-            <div class="divider_solid"></div>
+        <div class="topnav" id="idTopnav">
+            <a href="#" class="active" id="navItemMenu">Menu</a>
         </div>
-        <h2>Questions</h2>
-        <div class="item_container">
-            
-        </div>
-        <div class="btn_finish_div">
-            <div id="btn_finish">
-                <p>Check</p>
+        <div class="main_content">
+            <ul class="practice_type_list">
+
+            </ul>
+
+            <div class="content_practice">
+                <!-- <div class="ex_example">
+                    <h2>How-to</h2>
+                    <p>Read the sentence and answer the highlighted prepositions in French. <br><br>For
+                        Examples,<br><b>Question:</b> Please deliver the purchased items to <b><u>my
+                                house</u></b>.<br><b>Answer:</b> chez moi</p>
+                    <div class="divider_solid"></div>
+                </div> -->
+                <h2>Questions</h2>
+                <div class="item_container">
+
+                </div>
+                <div class="btn_finish_div">
+                    <div id="btn_finish">
+                        <p>Check</p>
+                    </div>
+                </div>
             </div>
+
         </div>
+
     </div>
 </body>
 <script src="./index.js" type="module"></script>
+<script>
+    function onClickNavBarDropDown() {
+        const mainContent = document.getElementsByClassName("main_content")[0];
+        var x = document.getElementById("idTopnav");
+
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
 </html>

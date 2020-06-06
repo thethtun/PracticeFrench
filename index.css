@@ -1,12 +1,125 @@
+body {
+    margin: 0;
+}
+
 .root {
-    margin: 20px;
     font-size: 20px;
+}
+
+.main_content {
+    padding: 0px 20px 20px 20px;
+}
+
+.content_practice { 
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+.sticky { 
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .main_content {
+    padding-top: 60px;
+  }
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    /* background-color: #ddd;
+    color: black; */
+}
+
+.topnav a.active {
+    /* background-color: #4CAF50;
+    color: white; */
+    color: #f2f2f2;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 .item_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.practice_type_list { 
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.practice_item_type { 
+    background-color: #4CAF50;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+
+.practice_item_type:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 0.5px solid #4CAF50;
+}
+
+.practice_item_type:active {
+    background-color: white;
+    color: black;
+}
+
+.practice_item_type p {
+    margin: 0;
 }
 
 
@@ -18,7 +131,7 @@
     margin-top: 15px;
 }
 
-.text_field_answer_normal { 
+.text_field_answer_normal {
     height: 20px;
     text-indent: 5px;
 }
@@ -51,11 +164,11 @@
     color: black;
 }
 
-.answer_div { 
+.answer_div {
     display: none;
 }
 
-.divider_solid { 
+.divider_solid {
     margin-top: 1rem;
     border-top: 1px solid #bbb;
 }

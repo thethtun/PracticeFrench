@@ -2,6 +2,7 @@ import prepositions from './data/prepositions.js';
 import verbs from './data/verb_rules.js';
 import practiceListTitles from './data/q_type.js';
 import q_makingQuestions from './data/making_questions.js';
+import q_numbers from './data/numbers.js';
 
 var dataSource = prepositions;
 var availablePracticeList = practiceListTitles;
@@ -56,6 +57,9 @@ function showAvailablePracticeList() {
                     break;
                 case "making_questions":
                     dataSource = q_makingQuestions;
+                    break;
+                case "numbers":
+                    dataSource = q_numbers;
                     break;
                 default:
                     dataSource = prepositions

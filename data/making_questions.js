@@ -15,7 +15,7 @@ export default [
     },
     {
         question: "from who",
-        answer: "de",
+        answer: "de qui",
         highlight: "She talks",
     },
     {
@@ -65,7 +65,7 @@ export default [
     },
     {
         question: "which (f)",
-        answer: "qu'elle",
+        answer: "quelle",
         highlight: "You talks",
     },
     {

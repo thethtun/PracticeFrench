@@ -14,5 +14,9 @@ export default [
     {
         name : "Memorize Verb",
         key: "verbs",
+    },
+    {
+        name : "Numbers",
+        key: "numbers",
     }
 ]

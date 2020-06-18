@@ -20,7 +20,7 @@ export default [
     },
     {
         question: "4",
-        answer: "quantre",
+        answer: "quatre",
         highlight: "You talks",
     },
     {
@@ -76,6 +76,11 @@ export default [
     {
         question: "15",
         answer: "quinze",
+        highlight: "You talks",
+    },
+    {
+        question: "16",
+        answer: "seize",
         highlight: "You talks",
     },
     {

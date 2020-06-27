@@ -13,7 +13,7 @@ export default [
     },
     {
         name : "Memorize Verb",
-        key: "verbs",
+        key: "verb_practice",
     },
     {
         name : "Numbers",

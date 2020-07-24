@@ -1,5 +1,13 @@
 export default [
     {
+        name : "-re Verbe",
+        key: "re_verbe"
+    },
+    {
+        name : "-ir Verbe",
+        key: "ir_verbe"
+    },
+    {
         name : "Family Tree",
         key: "family_tree"
     },

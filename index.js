@@ -6,6 +6,8 @@ import q_numbers from './data/numbers.js';
 import verb_practice from './data/verbs_practice.js';
 import days_and_months from './data/weekdays_months.js';
 import family_tree from './data/family_tree.js';
+import ir_verbe from './data/ir_verbe.js';
+import re_verbe from './data/re_verbe.js';
 
 var dataSource = prepositions;
 var availablePracticeList = practiceListTitles;
@@ -72,7 +74,13 @@ function showAvailablePracticeList() {
                     break;
                 case "family_tree":
                     dataSource = family_tree;
-                    break;   
+                    break;
+                case "ir_verbe":
+                    dataSource = ir_verbe
+                    break;
+                case "re_verbe":
+                    dataSource = re_verbe;
+                    break;
                 default:
                     dataSource = prepositions
                     break;

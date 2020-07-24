@@ -21,7 +21,7 @@ export default [
     },
     {
         question: "grandmother",
-        answer: "la grand-fère",
+        answer: "la grand-mère",
         highlight: "I talks",
     },
     {
@@ -31,7 +31,7 @@ export default [
     },
     {
         question: "wife",
-        answer: "la mère",
+        answer: "la femme",
         highlight: "She talks",
     },
     {
@@ -61,7 +61,7 @@ export default [
     },
     {
         question: "granddaughter",
-        answer: "la petit-fille",
+        answer: "la petite-fille",
         highlight: "You talks",
     },
     {
